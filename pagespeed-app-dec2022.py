@@ -33,7 +33,7 @@ pagespeed = import_csv(file)
 pagespeed = pagespeed[pagespeed['Domain'] != 'en.horten.dk']
 
 # Title
-st.write('### Pagespeed Performance Review')
+st.write('## Pagespeed Performance Review')
 
 # Filtering-widget for domains ~~ Use output in ifelse for plotting of graphs
 domains = st.multiselect(
@@ -45,7 +45,7 @@ domains = st.multiselect(
 
 # Header and intro
 st.write('''
-    #### Performance scores
+    #### Lighthouse scores
     The distribution of Lighthouse performance scores accross all tested URLs. 
 ''')
 
