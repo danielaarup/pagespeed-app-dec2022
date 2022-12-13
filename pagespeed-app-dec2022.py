@@ -48,7 +48,7 @@ if len(domains) == 0:
     scores_plot = px.histogram(
         data_frame=pagespeed, 
         x='Performance Score', 
-        title="Lighthouse Scores<br><sub>The typical performance score for URLs across all domains.</sub>",
+        title="Lighthouse Scores",
         labels={
             'Performance Score': 'Score'
         },
@@ -58,12 +58,8 @@ if len(domains) == 0:
     )
     scores_plot.update_layout(
         margin=dict(l=50, r=25, t=50, b=50),
-        plot_bgcolor='white',
-        title={
-            'y': 0.97,
-            'x': 0.1,
-            'yanchor': 'top'}
-        )
+        plot_bgcolor='white'
+    )
     scores_plot.update_xaxes(showline=True, linecolor='lightgrey', mirror=True)
     scores_plot.update_yaxes(showline=True, linecolor='lightgrey', mirror=True)
     st.plotly_chart(scores_plot, use_container_width=True)
@@ -72,7 +68,7 @@ else:
         data_frame=pagespeed[pagespeed['Domain'].isin(domains)], 
         x='Performance Score', 
         color='Domain',
-        title="Lighthouse Scores<br><sub>The typical performance score for URLs across selected domains.</sub>",
+        title="Lighthouse Scores",
         labels={
             'Performance Score': 'Score'
         },
@@ -83,11 +79,7 @@ else:
     )
     scores_plot.update_layout(
         margin=dict(l=50, r=25, t=50, b=50),
-        plot_bgcolor='white',
-        title={
-            'y': 0.97,
-            'x': 0.1,
-            'yanchor': 'top'}
+        plot_bgcolor='white'
         )
     scores_plot.update_xaxes(showline=True, linecolor='lightgrey', mirror=True)
     scores_plot.update_yaxes(showline=True, linecolor='lightgrey', mirror=True)
