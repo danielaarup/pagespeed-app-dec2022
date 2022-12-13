@@ -50,6 +50,7 @@ if len(domains) == 0:
         x='Performance Score', 
         nbins=50, 
         range_x=[0,100],
+        marginal='rug',
         color_discrete_sequence=px.colors.qualitative.Dark2
     )
     scores_plot.update_layout(
