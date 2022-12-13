@@ -46,7 +46,7 @@ domains = st.multiselect(
 # Header and intro
 st.write('''
     #### Lighthouse scores
-    The distribution of Lighthouse performance scores accross all tested URLs. 
+    The distribution of Lighthouse performance scores across all tested URLs. 
 ''')
 
 # Pagespeed performance score [GRAPH]
