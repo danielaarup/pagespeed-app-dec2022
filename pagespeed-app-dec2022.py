@@ -79,7 +79,8 @@ else:
     )
     scores_plot.update_layout(
         margin=dict(l=50, r=25, t=50, b=50),
-        plot_bgcolor='white'
+        plot_bgcolor='white',
+        title={'xanchor':'left'}
         )
     scores_plot.update_xaxes(showline=True, linecolor='lightgrey', mirror=True)
     scores_plot.update_yaxes(showline=True, linecolor='lightgrey', mirror=True)
