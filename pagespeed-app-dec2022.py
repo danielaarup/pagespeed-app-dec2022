@@ -124,19 +124,10 @@ with left_col:
                 'Opportunity': '',
                 'Mean Savings (ms)': 'Average Savings (ms)'
             },
-            title="Top pagespeed opportunities<br><sub>The issues with largest average potential.</sub>",
             color_discrete_sequence=px.colors.qualitative.Dark2,
             height=600
             )
-        opportunities_stat_plot.update_layout(
-            margin=dict(l=50, r=50, t=50, b=250),
-            title={
-                'y':0.97,
-                'x':0.5,
-                'xanchor': 'center',
-                'yanchor': 'top'},
-            plot_bgcolor='white'
-            )
+        opportunities_stat_plot.update_layout(margin=dict(l=50, r=50, t=50, b=250), plot_bgcolor='white')
         opportunities_stat_plot.update_xaxes(showline=True, linecolor='lightgrey', mirror=False)
         opportunities_stat_plot.update_yaxes(showgrid=True, gridcolor='lightgrey')
         st.plotly_chart(opportunities_stat_plot, use_container_width=True)
@@ -152,19 +143,10 @@ with left_col:
                 'Opportunity': '',
                 'Mean Savings (ms)': 'Average Savings (ms)'
             },
-            title="Top pagespeed opportunities<br><sub>The issues with largest average potential.</sub>",
             color_discrete_sequence=px.colors.qualitative.Dark2,
             height=600
             )
-        opportunities_stat_plot.update_layout(
-            margin=dict(l=50, r=50, t=50, b=250),
-            title={
-                'y':0.97,
-                'x':0.5,
-                'xanchor': 'center',
-                'yanchor': 'top'},
-            plot_bgcolor='white'
-            )
+        opportunities_stat_plot.update_layout(margin=dict(l=50, r=50, t=50, b=250), plot_bgcolor='white')
         opportunities_stat_plot.update_xaxes(showline=True, linecolor='lightgrey', mirror=False)
         opportunities_stat_plot.update_yaxes(showgrid=True, gridcolor='lightgrey')
         st.plotly_chart(opportunities_stat_plot, use_container_width=True)
@@ -180,23 +162,15 @@ with right_col:
             y='Time savings (ms)',
             x='Opportunity',
             labels={
-                'Opportunity': ''
+                'Opportunity': '',
+                'Time savings (ms)': 'Savings per URL (ms)
             },
-            title="Distribution of savings<br><sub>Time savings for each URL in the selection [log scale].</sub>",
             opacity=0.3,
             log_y=True,
             color_discrete_sequence=px.colors.qualitative.Dark2,
             height=600
             )
-        opportunities_dist_plot.update_layout(
-            margin=dict(l=50, r=50, t=50, b=250),
-            title={
-                'y':0.97,
-                'x':0.5,
-                'xanchor': 'center',
-                'yanchor': 'top'},
-            plot_bgcolor='white'
-            )
+        opportunities_dist_plot.update_layout(margin=dict(l=50, r=50, t=50, b=250), plot_bgcolor='white')
         opportunities_dist_plot.update_xaxes(
             showline=True, linecolor='lightgrey', mirror=False,
             showgrid=True, gridcolor='lightgrey'
@@ -209,23 +183,15 @@ with right_col:
             y='Time savings (ms)',
             x='Opportunity',
             labels={
-                'Opportunity': ''
+                'Opportunity': '',
+                'Time savings (ms)': 'Savings per URL (ms)
             },
-            title="Distribution of savings<br><sub>Time savings for each URL in the selection [log scale].</sub>",
             opacity=0.3,
             log_y=True,
             color_discrete_sequence=px.colors.qualitative.Dark2,
             height=600
             )
-        opportunities_dist_plot.update_layout(
-            margin=dict(l=50, r=50, t=50, b=250),
-            title={
-                'y':0.97,
-                'x':0.5,
-                'xanchor': 'center',
-                'yanchor': 'top'},
-            plot_bgcolor='white'
-            )
+        opportunities_dist_plot.update_layout(margin=dict(l=50, r=50, t=50, b=250), plot_bgcolor='white')
         opportunities_dist_plot.update_xaxes(
             showline=True, linecolor='lightgrey', mirror=False,
             showgrid=True, gridcolor='lightgrey'
