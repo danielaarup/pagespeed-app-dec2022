@@ -145,7 +145,7 @@ with left_col:
             height=400
             )
         opportunities_stat_plot.update_layout(
-            margin=dict(l=25, r=25, t=50, b=50),
+            margin=dict(l=25, r=25, t=50, b=150),
             title={
                 'y':0.97,
                 'x':0.5,
@@ -173,7 +173,7 @@ with left_col:
             height=400
             )
         opportunities_stat_plot.update_layout(
-            margin=dict(l=25, r=25, t=50, b=50),
+            margin=dict(l=25, r=25, t=50, b=150),
             title={
                 'y':0.97,
                 'x':0.5,
