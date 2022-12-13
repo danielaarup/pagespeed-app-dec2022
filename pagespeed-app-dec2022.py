@@ -43,6 +43,12 @@ domains = st.multiselect(
 
 # ~~~ [SECTON] Pagespeed performance 
 
+# Header and intro
+st.write('''
+    #### Performance scores
+    The distribution of Lighthouse performance scores accross all tested URLs. 
+''')
+
 # Pagespeed performance score [GRAPH]
 if len(domains) == 0:
     scores_plot = px.histogram(
@@ -80,6 +86,12 @@ else:
 
 
 # ~~~ [SECTION] Opportunities
+
+# Header and intro
+st.write('''
+    #### Opportunities
+    The top issues and performance opportunities for the selected domains. The graph on the left shows the average time savings for each technical opportunity, whereas the graph on the right shows the distribution of urls according to their estimated time savings for each opportunity.
+''')
 
 left_col, right_col = st.columns(2)
 
