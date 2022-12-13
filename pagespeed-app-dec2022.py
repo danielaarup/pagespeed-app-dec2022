@@ -48,10 +48,6 @@ if len(domains) == 0:
     scores_plot = px.histogram(
         data_frame=pagespeed, 
         x='Performance Score', 
-        title="Lighthouse Scores",
-        labels={
-            'Performance Score': 'Score'
-        },
         nbins=50, 
         range_x=[0,100],
         color_discrete_sequence=px.colors.qualitative.Dark2
@@ -68,10 +64,6 @@ else:
         data_frame=pagespeed[pagespeed['Domain'].isin(domains)], 
         x='Performance Score', 
         color='Domain',
-        title="Lighthouse Scores",
-        labels={
-            'Performance Score': 'Score'
-        },
         nbins=50, 
         marginal='rug', 
         range_x=[0,100], 
@@ -79,9 +71,8 @@ else:
     )
     scores_plot.update_layout(
         margin=dict(l=50, r=25, t=50, b=50),
-        plot_bgcolor='white',
-        title={'xanchor':'left'}
-        )
+        plot_bgcolor='white'
+    )
     scores_plot.update_xaxes(showline=True, linecolor='lightgrey', mirror=True)
     scores_plot.update_yaxes(showline=True, linecolor='lightgrey', mirror=True)
     st.plotly_chart(scores_plot, use_container_width=True)
