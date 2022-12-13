@@ -127,7 +127,7 @@ with left_col:
             color_discrete_sequence=px.colors.qualitative.Dark2,
             height=600
             )
-        opportunities_stat_plot.update_layout(margin=dict(l=50, r=50, t=10, b=250), plot_bgcolor='white')
+        opportunities_stat_plot.update_layout(margin=dict(l=50, r=50, t=10, b=150), plot_bgcolor='white')
         opportunities_stat_plot.update_xaxes(showline=True, linecolor='lightgrey', mirror=False)
         opportunities_stat_plot.update_yaxes(showgrid=True, gridcolor='lightgrey')
         st.plotly_chart(opportunities_stat_plot, use_container_width=True)
@@ -146,7 +146,7 @@ with left_col:
             color_discrete_sequence=px.colors.qualitative.Dark2,
             height=600
             )
-        opportunities_stat_plot.update_layout(margin=dict(l=50, r=50, t=10, b=250), plot_bgcolor='white')
+        opportunities_stat_plot.update_layout(margin=dict(l=50, r=50, t=10, b=150), plot_bgcolor='white')
         opportunities_stat_plot.update_xaxes(showline=True, linecolor='lightgrey', mirror=False)
         opportunities_stat_plot.update_yaxes(showgrid=True, gridcolor='lightgrey')
         st.plotly_chart(opportunities_stat_plot, use_container_width=True)
@@ -170,7 +170,7 @@ with right_col:
             color_discrete_sequence=px.colors.qualitative.Dark2,
             height=600
             )
-        opportunities_dist_plot.update_layout(margin=dict(l=50, r=50, t=10, b=250), plot_bgcolor='white')
+        opportunities_dist_plot.update_layout(margin=dict(l=50, r=50, t=10, b=150), plot_bgcolor='white')
         opportunities_dist_plot.update_xaxes(
             showline=True, linecolor='lightgrey', mirror=False,
             showgrid=True, gridcolor='lightgrey'
@@ -191,7 +191,7 @@ with right_col:
             color_discrete_sequence=px.colors.qualitative.Dark2,
             height=600
             )
-        opportunities_dist_plot.update_layout(margin=dict(l=50, r=50, t=10, b=250), plot_bgcolor='white')
+        opportunities_dist_plot.update_layout(margin=dict(l=50, r=50, t=10, b=150), plot_bgcolor='white')
         opportunities_dist_plot.update_xaxes(
             showline=True, linecolor='lightgrey', mirror=False,
             showgrid=True, gridcolor='lightgrey'
