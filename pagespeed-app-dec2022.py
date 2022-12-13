@@ -90,7 +90,7 @@ else:
 # Header and intro
 st.write('''
     #### Opportunities
-    The top issues and performance opportunities for the selected domains. The graph on the left shows the average time savings for each technical opportunity, whereas the graph on the right shows the distribution of urls according to their estimated time savings for each opportunity.
+    The top performance issues and opportunities for the selected domains. The graph on the left shows the average time savings for each of the technical fields of opportunity, whereas the graph on the right shows the distribution of urls according to their estimated time savings for each opportunity.
 ''')
 
 left_col, right_col = st.columns(2)
