@@ -142,7 +142,7 @@ with left_col:
             },
             title="Top pagespeed opportunities<br><sub>The issues with largest average potential.</sub>",
             color_discrete_sequence=px.colors.qualitative.Dark2,
-            height=600
+            height=400
             )
         opportunities_stat_plot.update_layout(
             margin=dict(l=25, r=25, t=50, b=50),
@@ -170,7 +170,7 @@ with left_col:
             },
             title="Top pagespeed opportunities<br><sub>The issues with largest average potential.</sub>",
             color_discrete_sequence=px.colors.qualitative.Dark2,
-            height=600
+            height=400
             )
         opportunities_stat_plot.update_layout(
             margin=dict(l=25, r=25, t=50, b=50),
@@ -202,7 +202,7 @@ with right_col:
             opacity=0.3,
             log_y=True,
             color_discrete_sequence=px.colors.qualitative.Dark2,
-            height=600
+            height=400
             )
         opportunities_dist_plot.update_layout(
             margin=dict(l=25, r=25, t=50, b=50),
@@ -231,7 +231,7 @@ with right_col:
             opacity=0.3,
             log_y=True,
             color_discrete_sequence=px.colors.qualitative.Dark2,
-            height=600
+            height=400
             )
         opportunities_dist_plot.update_layout(
             margin=dict(l=25, r=25, t=50, b=50),
