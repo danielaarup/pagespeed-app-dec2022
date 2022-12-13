@@ -26,7 +26,7 @@ def import_csv(file):
     df['Domain'] = df['Address'].str.extract('//(www\.){0,1}(.*?)/')[1]
     return df
 
-file = "/pagespeed_larger_sample.csv"
+file = "pagespeed_larger_sample.csv"
 pagespeed = import_csv(file)
 
 # Filter 'en.horten.dk' domain away
