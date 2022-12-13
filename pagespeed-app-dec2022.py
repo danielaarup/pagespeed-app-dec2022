@@ -53,7 +53,7 @@ if len(domains) == 0:
         color_discrete_sequence=px.colors.qualitative.Dark2
     )
     scores_plot.update_layout(
-        margin=dict(l=50, r=25, t=20, b=50),
+        margin=dict(l=50, r=25, t=25, b=50),
         plot_bgcolor='white'
     )
     scores_plot.update_xaxes(showline=True, linecolor='lightgrey', mirror=True)
@@ -70,7 +70,7 @@ else:
         color_discrete_sequence=px.colors.qualitative.Dark2
     )
     scores_plot.update_layout(
-        margin=dict(l=50, r=25, t=20, b=50),
+        margin=dict(l=50, r=25, t=25, b=50),
         plot_bgcolor='white'
     )
     scores_plot.update_xaxes(showline=True, linecolor='lightgrey', mirror=True)
