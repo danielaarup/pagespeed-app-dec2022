@@ -60,8 +60,8 @@ if len(domains) == 0:
         margin=dict(l=50, r=25, t=50, b=50),
         plot_bgcolor='white',
         title={
-            'y':0.97,
-            'xanchor': 'left',
+            'y': 0.97,
+            'x': 0.1,
             'yanchor': 'top'}
         )
     scores_plot.update_xaxes(showline=True, linecolor='lightgrey', mirror=True)
@@ -85,8 +85,8 @@ else:
         margin=dict(l=50, r=25, t=50, b=50),
         plot_bgcolor='white',
         title={
-            'y':0.97,
-            'xanchor': 'left',
+            'y': 0.97,
+            'x': 0.1,
             'yanchor': 'top'}
         )
     scores_plot.update_xaxes(showline=True, linecolor='lightgrey', mirror=True)
