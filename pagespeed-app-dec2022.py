@@ -176,7 +176,7 @@ with right_col:
             x='Opportunity',
             labels={
                 'Opportunity': '',
-                'Time savings (ms)': 'Savings per URL (ms)'
+                'Time savings (ms)': 'Savings per URL (ms) [log scale]'
             },
             opacity=0.3,
             log_y=True,
@@ -197,7 +197,7 @@ with right_col:
             x='Opportunity',
             labels={
                 'Opportunity': '',
-                'Time savings (ms)': 'Savings per URL (ms)'
+                'Time savings (ms)': 'Savings per URL (ms) [log scale]'
             },
             opacity=0.3,
             log_y=True,
